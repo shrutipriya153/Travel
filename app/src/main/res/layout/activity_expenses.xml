@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Expenses">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout1">
+     <ImageView
+         android:layout_width="match_parent"
+         android:layout_height="200dp"
+         android:src="@drawable/upper_ex"
+         android:scaleType="fitXY"/>
+     <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/prev"
+         android:onClick="previous"/>
+     <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="40dp"
+         android:src="@drawable/add"
+         android:layout_alignParentRight="true"
+         android:onClick="add"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout1">
+       <ListView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/list">
+
+       </ListView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
